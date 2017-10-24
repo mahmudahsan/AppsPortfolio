@@ -69,8 +69,11 @@ or
 
 - Use CocoaPods or the Swift Package manager to include AppsPortfolio as a dependency in your project.
 
+```Ruby
+pod 'AppsPortfolio', :git => 'https://github.com/mahmudahsan/AppsPortfolio.git'
+```
 
-* In your project create a new **apps_portfolio.plist** file and provide your apps list. Follow thesample_portfolio.plist file format provided in here.
+* In your project create a new **apps_portfolio.plist** file and provide your apps list. Follow the sample_portfolio.plist file format provided in AppsPortfolio/Data.
 
 * In your project add the images of your cross promoting apps and mention them in your plist file.
 
