@@ -7,7 +7,7 @@ To showcase multiple apps of a developer for cross promotion. Its an offline way
 
 <p align="center">
     <a href="https://cocoapods.org/pods/AppsPortfolio">
-        <img src="https://img.shields.io/badge/pods-v1.0.0-orange.svg" alt="CocoaPods" />
+        <img src="https://img.shields.io/badge/pods-v1.0.3-orange.svg" alt="CocoaPods" />
     </a>
     <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
@@ -28,7 +28,8 @@ To showcase multiple apps of a developer for cross promotion. Its an offline way
 
 Integrate within a UIViewController:
 ```swift
-let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: nil)
+let bundle = Bundle(for: AppsPortfolioViewController.self)
+let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: bundle)
 appsPortfolioVC.title     = "Portfolio"  //you can give whatever name you like
 appsPortfolioVC.loadAppList(name: "sample_portfolio") //provide your custom portfolio plist file name here
 self.navigationController?.pushViewController(appsPortfolioVC, animated: true)
@@ -36,7 +37,8 @@ self.navigationController?.pushViewController(appsPortfolioVC, animated: true)
 
 Implement delegate to inform when user tap an app:
 ```swift
-let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: nil)
+let bundle = Bundle(for: AppsPortfolioViewController.self)
+let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: bundle)
 appsPortfolioVC.title     = "Portfolio"
 appsPortfolioVC.analytics = self
 appsPortfolioVC.loadAppList(name: "sample_portfolio")
