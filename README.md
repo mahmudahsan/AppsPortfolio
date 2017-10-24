@@ -7,7 +7,7 @@ To showcase multiple apps of a developer for cross promotion. Its an offline way
 
 <p align="center">
     <a href="https://cocoapods.org/pods/AppsPortfolio">
-        <img src="https://img.shields.io/badge/pods-v1.0.4-orange.svg" alt="CocoaPods" />
+        <img src="https://img.shields.io/badge/pods-v1.0.5-orange.svg" alt="CocoaPods" />
     </a>
     <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />

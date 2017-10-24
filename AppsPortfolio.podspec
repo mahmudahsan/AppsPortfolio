@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AppsPortfolio"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "To showcase multiple apps of a developer for cross promotion"
   s.description  = <<-DESC
       To showcase multiple apps of a developer for cross promotion using Swift. Its an offline way to show user about other apps and it's also possible to know which app users are having more interest.

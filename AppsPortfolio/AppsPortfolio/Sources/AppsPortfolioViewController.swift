@@ -75,7 +75,7 @@ public class AppsPortfolioViewController: UIViewController, UITableViewDataSourc
     }
     
     public func setAnalyticsDelegate(any: Any){
-        analytics = any as! Analytics
+        analytics = any as? Analytics
     }
     
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
