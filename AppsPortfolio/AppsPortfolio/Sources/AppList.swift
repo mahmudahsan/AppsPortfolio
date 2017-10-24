@@ -27,7 +27,7 @@ import Foundation
 /**
  *  Protocol to detect whether user tap an app in the portfolio
  */
-protocol Analytics {
+public protocol Analytics {
     func appClicked(appNamed: String)
 }
 

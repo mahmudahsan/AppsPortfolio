@@ -34,9 +34,10 @@ class ViewController: UIViewController {
     
     // MARK: - DEMO
     @IBAction func loadPortfolioViewController(){
-        let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: nil)
+        let bundle = Bundle(for: AppsPortfolioViewController.self)
+        let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: bundle)
         appsPortfolioVC.title     = "Portfolio"
-        appsPortfolioVC.analytics = self //assigning analytics delegates
+        appsPortfolioVC.setAnalyticsDelegate(any: self) //assigning analytics delegates
         appsPortfolioVC.loadAppList(name: "sample_portfolio")
         //appsPortfolioVC.loadAppList(name: "sample_portfolio_one_category")
         self.navigationController?.pushViewController(appsPortfolioVC, animated: true)

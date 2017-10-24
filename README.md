@@ -40,7 +40,7 @@ Implement delegate to inform when user tap an app:
 let bundle = Bundle(for: AppsPortfolioViewController.self)
 let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: bundle)
 appsPortfolioVC.title     = "Portfolio"
-appsPortfolioVC.analytics = self
+appsPortfolioVC.setAnalyticsDelegate(any: self)
 appsPortfolioVC.loadAppList(name: "sample_portfolio")
 self.navigationController?.pushViewController(appsPortfolioVC, animated: true)
 ```
