@@ -24,7 +24,7 @@
 
 import UIKit
 
-class AppsPortfolioViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+public class AppsPortfolioViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var segmentControl:UISegmentedControl!
     @IBOutlet var tableView:UITableView!
     @IBOutlet var topGap:NSLayoutConstraint!
@@ -36,7 +36,7 @@ class AppsPortfolioViewController: UIViewController, UITableViewDataSource, UITa
     
     var analytics:Analytics? // defined in AppList
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         // In UI design .xib file has 2 segment so removed those at initialization
@@ -69,7 +69,7 @@ class AppsPortfolioViewController: UIViewController, UITableViewDataSource, UITa
     /**
      *  Protocol to detect whether user tap an app in the portfolio
      */
-    func loadAppList(name:String){
+    public func loadAppList(name:String){
         appList.loadAppList(listName: name)
         appList.processAppList()
     }
@@ -78,20 +78,20 @@ class AppsPortfolioViewController: UIViewController, UITableViewDataSource, UITa
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let rootArrList = appList.portfolioListDetails as NSArray?
         if rootArrList != nil{
             let categoryWiseItemList = rootArrList?.object(at: segmentIndex) as! NSArray
@@ -101,15 +101,16 @@ class AppsPortfolioViewController: UIViewController, UITableViewDataSource, UITa
         return 0
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50.0
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell:AppsPortfolioTableViewCell?  = tableView.dequeueReusableCell(withIdentifier: "cell") as? AppsPortfolioTableViewCell
         
         if (cell == nil){
-            cell = Bundle.main.loadNibNamed("AppsPortfolioTableViewCell", owner: self, options: nil)?[0] as? AppsPortfolioTableViewCell
+            let bundle = Bundle(for: AppsPortfolioViewController.self)
+            cell = bundle.loadNibNamed("AppsPortfolioTableViewCell", owner: self, options: nil)?[0] as? AppsPortfolioTableViewCell
         }
         
         let rootArrList = appList.portfolioListDetails as NSArray?
@@ -136,7 +137,7 @@ class AppsPortfolioViewController: UIViewController, UITableViewDataSource, UITa
         return cell!
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
         
         var appUrl:String   = ""
