@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>Games</string>
+		<dict>
+			<key>name</key>
+			<string>Math Mastery Multiplayer</string>
+			<key>image</key>
+			<string>math_search</string>
+			<key>url</key>
+			<string>itms-apps://itunes.apple.com/app/id1024469928</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Word Search Multiplayer Multilingual</string>
+			<key>image</key>
+			<string>word_search</string>
+			<key>url</key>
+			<string>itms-apps://itunes.apple.com/app/id698143087</string>
+		</dict>
+	</array>
+</array>
+</plist>

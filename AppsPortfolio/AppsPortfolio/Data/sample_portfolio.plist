@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>Games</string>
+		<dict>
+			<key>name</key>
+			<string>Math Mastery Multiplayer</string>
+			<key>image</key>
+			<string>math_search</string>
+			<key>url</key>
+			<string>itms-apps://itunes.apple.com/app/id1024469928</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Word Search Multiplayer Multilingual</string>
+			<key>image</key>
+			<string>word_search</string>
+			<key>url</key>
+			<string>itms-apps://itunes.apple.com/app/id698143087</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Hangman Multiplayer</string>
+			<key>image</key>
+			<string>hangman</string>
+			<key>url</key>
+			<string>itms-apps://itunes.apple.com/app/id542400527</string>
+		</dict>
+	</array>
+	<array>
+		<string>Education</string>
+		<dict>
+			<key>name</key>
+			<string>Arabic Dictionary</string>
+			<key>image</key>
+			<string>arabic</string>
+			<key>url</key>
+			<string>itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=all&amp;term=iThinkdiff+Arabic+Dictionary</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bengali Dictionary</string>
+			<key>image</key>
+			<string>bengali</string>
+			<key>url</key>
+			<string>itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=all&amp;term=iThinkdiff+Bengali+Dictionary</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Spanish Dictionary</string>
+			<key>image</key>
+			<string>spanish</string>
+			<key>url</key>
+			<string>itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=all&amp;term=iThinkdiff+Spanish+Dictionary</string>
+		</dict>
+	</array>
+	<array>
+		<string>Other</string>
+		<dict>
+			<key>name</key>
+			<string>Units Currency Calculator +</string>
+			<key>image</key>
+			<string>units_converter</string>
+			<key>url</key>
+			<string>itms-apps://itunes.apple.com/app/id1178870090</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Birthday Reminder</string>
+			<key>image</key>
+			<string>birthday</string>
+			<key>url</key>
+			<string>itms-apps://itunes.apple.com/app/id657198738</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bengali Notes</string>
+			<key>image</key>
+			<string>bengali_notes</string>
+			<key>url</key>
+			<string>itms-apps://itunes.apple.com/app/id665690475</string>
+		</dict>
+	</array>
+</array>
+</plist>
