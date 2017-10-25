@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AppsPortfolio"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "To showcase multiple apps of a developer for cross promotion"
   s.description  = <<-DESC
       To showcase multiple apps of a developer for cross promotion using Swift. Its an offline way to show user about other apps and it's also possible to know which app users are having more interest.
@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/mahmudahsan/AppsPortfolio.git", :tag => s.version.to_s }
-  s.source_files = "AppsPortfolio/AppsPortfolio/Sources/**/*"
+  s.source_files = "AppsPortfolio/Sources/**/*"
   s.frameworks   = "Foundation"
 end
