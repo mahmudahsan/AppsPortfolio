@@ -77,7 +77,7 @@ pod 'AppsPortfolio', :git => 'https://github.com/mahmudahsan/AppsPortfolio.git'
 * In your project add the icons of your cross promoting apps and mention them in your plist file. Better use Images.assets to add apps's icons.
 
 <p align="center">
-    <img src="preview.gif" width="375" max-width="50%" alt="Apps Portfolio" />
+    <img src="Images.png" width="992" max-width="50%" alt="Images" />
 </p>
 
 ## Questions or feedback?
