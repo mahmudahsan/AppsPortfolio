@@ -25,9 +25,9 @@
 import UIKit
 
 public class AppsPortfolioViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet var segmentControl:UISegmentedControl!
-    @IBOutlet var tableView:UITableView!
-    @IBOutlet var topGap:NSLayoutConstraint!
+    @IBOutlet weak var segmentControl:UISegmentedControl!
+    @IBOutlet weak var tableView:UITableView!
+    @IBOutlet weak var tableViewTopConstraint: NSLayoutConstraint!
     
     var animDuration:Double = 0.3
     var animDelay:Double    = 0.1
@@ -39,7 +39,7 @@ public class AppsPortfolioViewController: UIViewController, UITableViewDataSourc
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        // In UI design .xib file has 2 segment so removed those at initialization
+        // In UI design it has 2 segment so removed those at initialization
         segmentControl.removeAllSegments()
         segmentControl.isHidden = true
         segmentIndex = 0
@@ -52,15 +52,10 @@ public class AppsPortfolioViewController: UIViewController, UITableViewDataSourc
                 }
                 segmentControl.isHidden = false
                 segmentControl.selectedSegmentIndex = 0
-                
-                // iPhone X UI Adjust
-                if Device.IS_IPHONE_X{
-                    topGap.constant = 94
-                }
             }
             else {
-                // if one category, then hide the segmented tab and adjust UI
-                topGap.constant = 0
+                //if provideo one category then adjust the constrain to place within segmented area
+                tableViewTopConstraint.constant = -28.0
             }
         }
     }
@@ -76,14 +71,6 @@ public class AppsPortfolioViewController: UIViewController, UITableViewDataSourc
     
     public func setAnalyticsDelegate(any: Any){
         analytics = any as? Analytics
-    }
-    
-    override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    
-    required public init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     override public func didReceiveMemoryWarning() {
@@ -129,14 +116,14 @@ public class AppsPortfolioViewController: UIViewController, UITableViewDataSourc
         /**
          *  Animation to show the table items in style
          */
-        if (!cell!.isAnimationDone){
-            cell!.alpha = 0.0
-            
-            ModelEffect.sharedInstance.bouneEffectAnimation(duration: animDuration, delay: animDelay, view: cell!, vOrH: false, animVal: 30.0, pOn: false)
-            cell!.isAnimationDone = true
-            animDuration += 0.1
-            animDelay    += 0.01
-        }
+//        if (!cell!.isAnimationDone){
+//            cell!.alpha = 0.0
+//
+//            ModelEffect.sharedInstance.bouneEffectAnimation(duration: animDuration, delay: animDelay, view: cell!, vOrH: false, animVal: 30.0, pOn: false)
+//            cell!.isAnimationDone = true
+//            animDuration += 0.1
+//            animDelay    += 0.01
+//        }
  
         return cell!
     }

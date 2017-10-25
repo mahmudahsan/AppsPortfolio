@@ -35,14 +35,20 @@ class ViewController: UIViewController {
     // MARK: - DEMO
     @IBAction func loadPortfolioViewController(){
         let bundle = Bundle(for: AppsPortfolioViewController.self)
-        let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: bundle)
+        let storyboard = UIStoryboard(name: "AppsPortfolio", bundle: bundle)
+        
+        let appsPortfolioVC = storyboard.instantiateInitialViewController() as! AppsPortfolioViewController
         appsPortfolioVC.title     = "Portfolio"
         appsPortfolioVC.setAnalyticsDelegate(any: self) //assigning analytics delegates
         appsPortfolioVC.loadAppList(name: "sample_portfolio")
-        //appsPortfolioVC.loadAppList(name: "sample_portfolio_one_category")
         self.navigationController?.pushViewController(appsPortfolioVC, animated: true)
     }
 
+    // MARK: - DEMO From Xib View
+    @IBAction func openXibView(_ sender: Any) {
+        let vc = ViewControllerXib(nibName: "ViewControllerXib", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

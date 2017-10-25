@@ -1,8 +1,11 @@
 # AppsPortfolio
 To showcase multiple apps of a developer for cross promotion. Its an offline way to show user about other apps and it's also possible to know which app users are having more interest. I have been using this UI in all of my iOS apps for cross promoting my other apps. This is a complete project but any improvements are welcome.
+
+In plist data, if there is only one category mention for example games, then the segmented tab at top will not be shown. To show segmented tab with categories you must have to provide at least 2 categories of apps. Please chek the plist file structure to know how to provide app list.
+
 <p align="center">
     <a href="https://cocoapods.org/pods/AppsPortfolio">
-        <img src="https://img.shields.io/badge/pods-v1.0.6-orange.svg" alt="CocoaPods" />
+        <img src="https://img.shields.io/badge/pods-v1.1.0-orange.svg" alt="CocoaPods" />
     </a>
     <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
@@ -28,23 +31,30 @@ To showcase multiple apps of a developer for cross promotion. Its an offline way
 Integrate within a UIViewController:
 ```swift
 let bundle = Bundle(for: AppsPortfolioViewController.self)
-let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: bundle)
-appsPortfolioVC.title     = "Portfolio"  //you can give whatever name you like
-appsPortfolioVC.loadAppList(name: "sample_portfolio") //provide your custom portfolio plist file name here
+let storyboard = UIStoryboard(name: "AppsPortfolio", bundle: bundle)
+        
+let appsPortfolioVC = storyboard.instantiateInitialViewController() as! AppsPortfolioViewController
+appsPortfolioVC.title     = "Portfolio"
+appsPortfolioVC.loadAppList(name: "sample_portfolio")
 self.navigationController?.pushViewController(appsPortfolioVC, animated: true)
 ```
 
 Implement delegate to inform when user tap an app:
 ```swift
 let bundle = Bundle(for: AppsPortfolioViewController.self)
-let appsPortfolioVC = AppsPortfolioViewController(nibName: "AppsPortfolioViewController", bundle: bundle)
+let storyboard = UIStoryboard(name: "AppsPortfolio", bundle: bundle)
+        
+let appsPortfolioVC = storyboard.instantiateInitialViewController() as! AppsPortfolioViewController
 appsPortfolioVC.title     = "Portfolio"
-appsPortfolioVC.setAnalyticsDelegate(any: self)
+
+//assigning analytics delegates
+appsPortfolioVC.setAnalyticsDelegate(any: self) 
+
 appsPortfolioVC.loadAppList(name: "sample_portfolio")
 self.navigationController?.pushViewController(appsPortfolioVC, animated: true)
 ```
 
-One delegate method to get notification:
+One delegate method need to implement to know user interaction:
 ```swift
 extension ViewController : Analytics{
     func appClicked(appNamed: String) {

@@ -29,24 +29,35 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App_Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppsPortfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syp-qO-D1c">
-                                <rect key="frame" x="138" y="318" width="98" height="30"/>
-                                <state key="normal" title="Apps Portfolio"/>
-                                <connections>
-                                    <action selector="loadPortfolioViewController" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kgu-5X-lxn"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="05r-vW-1Pe">
+                                <rect key="frame" x="137" y="303.5" width="101" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syp-qO-D1c">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="30"/>
+                                        <state key="normal" title="Apps Portfolio"/>
+                                        <connections>
+                                            <action selector="loadPortfolioViewController" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kgu-5X-lxn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM4-tL-nde">
+                                        <rect key="frame" x="0.0" y="30" width="101" height="30"/>
+                                        <state key="normal" title="Open Xib View"/>
+                                        <connections>
+                                            <action selector="openXibView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHQ-Hg-KzH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Syp-qO-D1c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q9s-TJ-f6y"/>
-                            <constraint firstItem="Syp-qO-D1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oKQ-Ez-ugY"/>
+                            <constraint firstItem="05r-vW-1Pe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="03u-3q-sb6"/>
+                            <constraint firstItem="05r-vW-1Pe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vg1-Sq-5ov"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,6 +66,7 @@
                         <outlet property="bAppsPortfolio" destination="Syp-qO-D1c" id="seS-Wp-Bgk"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113" y="-1002"/>
         </scene>
