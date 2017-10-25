@@ -1,7 +1,7 @@
 # AppsPortfolio
 To showcase multiple apps of a developer for cross promotion. Its an offline way to show user about other apps and it's also possible to know which app users are having more interest. I have been using this UI in all of my iOS apps for cross promoting my other apps. This is a complete project but any improvements are welcome.
 
-In plist data, if there is only one category mention for example games, then the segmented tab at top will not be shown. To show segmented tab with categories you must have to provide at least 2 categories of apps. Please chek the plist file structure to know how to provide app list.
+In plist data, if there is only one category mention for example games, then the segmented tab at top will not be shown. To show segmented tab with categories you must have to provide at least 2 categories of apps. Please check the plist file structure to know how to provide app list.
 
 <p align="center">
     <a href="https://cocoapods.org/pods/AppsPortfolio">
