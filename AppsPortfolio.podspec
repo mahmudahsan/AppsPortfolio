@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/mahmudahsan/AppsPortfolio.git", :tag => s.version.to_s }
-  s.source_files = "AppsPortfolio/Sources/**/*"
+  s.source_files = "AppsPortfolio/Sources/**/*.{swift}"
+  s.resources    = ['AppsPortfolio/Sources/**/*.{storyboard}']
   s.frameworks   = "Foundation"
 end
