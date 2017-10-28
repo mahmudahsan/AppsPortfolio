@@ -5,7 +5,7 @@ In plist data, if there is only one category mention for example games, then the
 
 <p align="center">
     <a href="https://cocoapods.org/pods/AppsPortfolio">
-        <img src="https://img.shields.io/badge/pods-v1.1.0-orange.svg" alt="CocoaPods" />
+        <img src="https://img.shields.io/badge/pods-v1.1.1-orange.svg" alt="CocoaPods" />
     </a>
     <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
