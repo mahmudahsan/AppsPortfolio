@@ -54,7 +54,7 @@ appsPortfolioVC.view.addSubview(backButton)
 ```
 
 <p align="center">
-    <img src="custom_back_button.jpg" width="864" max-width="40%" alt="Apps Portfolio" />
+    <img src="custom_back_button.jpg" width="300" alt="Apps Portfolio" />
 </p>    
 
 
