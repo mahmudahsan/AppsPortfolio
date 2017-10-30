@@ -39,6 +39,25 @@ appsPortfolioVC.loadAppList(name: "sample_portfolio")
 self.navigationController?.pushViewController(appsPortfolioVC, animated: true)
 ```
 
+Add a custom back button to top left if by default navigation bar is hidden:
+```swift
+let backButton = UIButton(frame: CGRect(x: 10, y: 7, width: 74, height: 30))
+backButton.setImage(UIImage(named: "btnBack"), for: UIControlState.normal)
+backButton.addTarget(self, action: #selector(goBackFromPortfolio), for: UIControlEvents.touchUpInside)
+appsPortfolioVC.view.addSubview(backButton)
+```
+
+```swift
+@objc private func goBackFromPortfolio(){
+    self.navigationController?.popViewController(animated: true)
+}
+```
+
+<p align="center">
+    <img src="custom_back_button.jpg" width="864" max-width="40%" alt="Apps Portfolio" />
+</p>    
+
+
 Implement delegate to inform when user tap an app:
 ```swift
 let bundle = Bundle(for: AppsPortfolioViewController.self)
