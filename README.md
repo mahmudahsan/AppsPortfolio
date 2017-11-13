@@ -1,9 +1,8 @@
 # AppsPortfolio
-To showcase multiple apps of a developer for cross promotion. Its an offline way to show user about other apps and it's also possible to know which app users are having more interest. I have been using this UI in all of my iOS apps for cross promoting my other apps. This is a complete project but any improvements are welcome.
-
-In plist data, if there is only one category mention for example games, then the segmented tab at top will not be shown. To show segmented tab with categories you must have to provide at least 2 categories of apps. Please check the plist file structure to know how to provide app list.
-
 <p align="center">
+    <a href="https://cocoapods.org/pods/AppsPortfolio">
+        <img src="https://img.shields.io/cocoapods/p/AppsPortfolio.svg?style=flat" alt="CocoaPods" />
+    </a>
     <a href="https://cocoapods.org/pods/AppsPortfolio">
         <img src="https://img.shields.io/badge/pods-v1.1.1-orange.svg" alt="CocoaPods" />
     </a>
@@ -14,6 +13,9 @@ In plist data, if there is only one category mention for example games, then the
         <img src="https://img.shields.io/badge/contact%40-mahmudahsan-green.svg" alt="Twitter: @mahmudahsan" />
     </a>
 </p>
+To showcase multiple apps of a developer for cross promotion. Its an offline way to show user about other apps and it's also possible to know which app users are having more interest. I have been using this UI in all of my iOS apps for cross promoting my other apps. This is a complete project but any improvements are welcome.
+
+In plist data, if there is only one category mention for example games, then the segmented tab at top will not be shown. To show segmented tab with categories you must have to provide at least 2 categories of apps. Please check the plist file structure to know how to provide app list.
 
 <p align="center">
     <img src="preview.gif" width="375" max-width="50%" alt="Apps Portfolio" />
@@ -98,7 +100,7 @@ or
 - Use CocoaPods or the Swift Package manager to include AppsPortfolio as a dependency in your project.
 
 ```Ruby
-pod 'AppsPortfolio', :git => 'https://github.com/mahmudahsan/AppsPortfolio.git'
+pod 'AppsPortfolio'
 ```
 
 * In your project create a new **apps_portfolio.plist** file and provide your apps list. Follow the sample_portfolio.plist file format provided in AppsPortfolio/Data.
