@@ -77,7 +77,7 @@ self.navigationController?.pushViewController(appsPortfolioVC, animated: true)
 
 One delegate method need to implement to know user interaction:
 ```swift
-extension ViewController : Analytics{
+extension ViewController : AppsPortfolio.Analytics{
     func appClicked(appNamed: String) {
         print("App: \(appNamed) clicked.")
     }
