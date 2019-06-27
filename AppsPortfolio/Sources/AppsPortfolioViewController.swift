@@ -145,7 +145,8 @@ public class AppsPortfolioViewController: UIViewController, UITableViewDataSourc
         
         //analytics call delegate
         analytics?.appClicked(appNamed: appTitle)
-        UIApplication.shared.openURL(NSURL(string : appUrl)! as URL)
+        UIApplication.shared.open(NSURL(string : appUrl)! as URL,
+                                  options:convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
     }
 
     /**
@@ -155,4 +156,9 @@ public class AppsPortfolioViewController: UIViewController, UITableViewDataSourc
         segmentIndex = segmentControl.selectedSegmentIndex
         tableView.reloadData()
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }
