@@ -136,7 +136,7 @@ public class AppsPortfolioViewController: UIViewController, UITableViewDataSourc
         
         let rootArrList = appList.portfolioListDetails as NSArray?
         if rootArrList != nil{
-            let categoryWiseItemList = rootArrList?.object(at: segmentControl.selectedSegmentIndex) as! NSArray
+            let categoryWiseItemList = rootArrList?.object(at: segmentIndex) as! NSArray
             
             let appDetail = categoryWiseItemList.object(at: indexPath.row) as! NSDictionary
             appUrl = (appDetail.value(forKey: "url") as? String)!
