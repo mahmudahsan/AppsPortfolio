@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5113A16E1FA0A6B90016B6C5 /* AppsPortfolio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5113A16D1FA0A6B90016B6C5 /* AppsPortfolio.storyboard */; };
+		515DE77A294D83740032A485 /* AppsPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DE775294D83740032A485 /* AppsPortfolioViewController.swift */; };
+		515DE77B294D83740032A485 /* AppsPortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DE776294D83740032A485 /* AppsPortfolioTableViewCell.swift */; };
+		515DE77C294D83740032A485 /* AppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DE777294D83740032A485 /* AppList.swift */; };
+		515DE77D294D83740032A485 /* AppsPortfolio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515DE778294D83740032A485 /* AppsPortfolio.storyboard */; };
+		515DE77E294D83740032A485 /* ModelEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DE779294D83740032A485 /* ModelEffect.swift */; };
 		516E51A51FA0270900D92E6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516E51A41FA0270900D92E6B /* Images.xcassets */; };
 		51A1416B1F9C515E00116A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A1416A1F9C515E00116A9F /* AppDelegate.swift */; };
 		51A1416D1F9C515E00116A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A1416C1F9C515E00116A9F /* ViewController.swift */; };
 		51A141701F9C515E00116A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A1416E1F9C515E00116A9F /* Main.storyboard */; };
 		51A141721F9C515E00116A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A141711F9C515E00116A9F /* Assets.xcassets */; };
 		51A141751F9C515E00116A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A141731F9C515E00116A9F /* LaunchScreen.storyboard */; };
-		51A1418B1F9C5BB300116A9F /* AppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A1418A1F9C5BB300116A9F /* AppList.swift */; };
-		51A1419A1F9C5C0700116A9F /* AppsPortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A141961F9C5C0600116A9F /* AppsPortfolioTableViewCell.swift */; };
-		51A1419B1F9C5C0700116A9F /* AppsPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A141981F9C5C0600116A9F /* AppsPortfolioViewController.swift */; };
-		51A1419D1F9C5C5300116A9F /* ModelEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A1419C1F9C5C5200116A9F /* ModelEffect.swift */; };
 		51C0E4E51F9F4973004E15C8 /* AppsPortfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C0E4E41F9F4973004E15C8 /* AppsPortfolioTests.swift */; };
 		51CC977A1FA09C8100F47D72 /* ViewControllerXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CC97781FA09C8100F47D72 /* ViewControllerXib.swift */; };
 		51CC977B1FA09C8100F47D72 /* ViewControllerXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51CC97791FA09C8100F47D72 /* ViewControllerXib.xib */; };
@@ -36,7 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5113A16D1FA0A6B90016B6C5 /* AppsPortfolio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppsPortfolio.storyboard; sourceTree = "<group>"; };
+		515DE775294D83740032A485 /* AppsPortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsPortfolioViewController.swift; sourceTree = "<group>"; };
+		515DE776294D83740032A485 /* AppsPortfolioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsPortfolioTableViewCell.swift; sourceTree = "<group>"; };
+		515DE777294D83740032A485 /* AppList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppList.swift; sourceTree = "<group>"; };
+		515DE778294D83740032A485 /* AppsPortfolio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppsPortfolio.storyboard; sourceTree = "<group>"; };
+		515DE779294D83740032A485 /* ModelEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelEffect.swift; sourceTree = "<group>"; };
 		516E51A41FA0270900D92E6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		51A141671F9C515E00116A9F /* AppsPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppsPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A1416A1F9C515E00116A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,10 +49,6 @@
 		51A141711F9C515E00116A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51A141741F9C515E00116A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51A141761F9C515E00116A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51A1418A1F9C5BB300116A9F /* AppList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppList.swift; sourceTree = "<group>"; };
-		51A141961F9C5C0600116A9F /* AppsPortfolioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPortfolioTableViewCell.swift; sourceTree = "<group>"; };
-		51A141981F9C5C0600116A9F /* AppsPortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPortfolioViewController.swift; sourceTree = "<group>"; };
-		51A1419C1F9C5C5200116A9F /* ModelEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelEffect.swift; sourceTree = "<group>"; };
 		51C0E4E21F9F4972004E15C8 /* AppsPortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppsPortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C0E4E41F9F4973004E15C8 /* AppsPortfolioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPortfolioTests.swift; sourceTree = "<group>"; };
 		51C0E4E61F9F4973004E15C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +76,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		515DE774294D83740032A485 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				515DE775294D83740032A485 /* AppsPortfolioViewController.swift */,
+				515DE776294D83740032A485 /* AppsPortfolioTableViewCell.swift */,
+				515DE777294D83740032A485 /* AppList.swift */,
+				515DE778294D83740032A485 /* AppsPortfolio.storyboard */,
+				515DE779294D83740032A485 /* ModelEffect.swift */,
+			);
+			name = Sources;
+			path = ../../Sources;
+			sourceTree = "<group>";
+		};
 		51A1415E1F9C515E00116A9F = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +109,9 @@
 		51A141691F9C515E00116A9F /* AppsPortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				515DE774294D83740032A485 /* Sources */,
 				51CC97751FA09C3600F47D72 /* AppsPortfolioDemoXib */,
 				51DE207F1F9EFA66001ADB06 /* AppsPortfolioDemo */,
-				51A1419E1F9C5C8500116A9F /* Sources */,
 				51A1419F1F9C5C9B00116A9F /* Data */,
 				51C0E4E31F9F4973004E15C8 /* AppsPortfolioTests */,
 				51A141711F9C515E00116A9F /* Assets.xcassets */,
@@ -106,18 +119,6 @@
 				51A141761F9C515E00116A9F /* Info.plist */,
 			);
 			path = AppsPortfolio;
-			sourceTree = "<group>";
-		};
-		51A1419E1F9C5C8500116A9F /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				51A1418A1F9C5BB300116A9F /* AppList.swift */,
-				51A141981F9C5C0600116A9F /* AppsPortfolioViewController.swift */,
-				51A141961F9C5C0600116A9F /* AppsPortfolioTableViewCell.swift */,
-				51A1419C1F9C5C5200116A9F /* ModelEffect.swift */,
-				5113A16D1FA0A6B90016B6C5 /* AppsPortfolio.storyboard */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 		51A1419F1F9C5C9B00116A9F /* Data */ = {
@@ -244,11 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				51DE20781F9EE5F0001ADB06 /* sample_portfolio_one_category.plist in Resources */,
+				515DE77D294D83740032A485 /* AppsPortfolio.storyboard in Resources */,
 				516E51A51FA0270900D92E6B /* Images.xcassets in Resources */,
 				51A141751F9C515E00116A9F /* LaunchScreen.storyboard in Resources */,
 				51CC977B1FA09C8100F47D72 /* ViewControllerXib.xib in Resources */,
 				51A141721F9C515E00116A9F /* Assets.xcassets in Resources */,
-				5113A16E1FA0A6B90016B6C5 /* AppsPortfolio.storyboard in Resources */,
 				51DE20751F9E0694001ADB06 /* sample_portfolio.plist in Resources */,
 				51A141701F9C515E00116A9F /* Main.storyboard in Resources */,
 			);
@@ -268,13 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51A1419D1F9C5C5300116A9F /* ModelEffect.swift in Sources */,
-				51A1419A1F9C5C0700116A9F /* AppsPortfolioTableViewCell.swift in Sources */,
-				51A1419B1F9C5C0700116A9F /* AppsPortfolioViewController.swift in Sources */,
 				51CC977A1FA09C8100F47D72 /* ViewControllerXib.swift in Sources */,
+				515DE77C294D83740032A485 /* AppList.swift in Sources */,
 				51A1416D1F9C515E00116A9F /* ViewController.swift in Sources */,
+				515DE77B294D83740032A485 /* AppsPortfolioTableViewCell.swift in Sources */,
+				515DE77E294D83740032A485 /* ModelEffect.swift in Sources */,
 				51A1416B1F9C515E00116A9F /* AppDelegate.swift in Sources */,
-				51A1418B1F9C5BB300116A9F /* AppList.swift in Sources */,
+				515DE77A294D83740032A485 /* AppsPortfolioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,12 +433,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/AppsPortfolio/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.ithinkdiff.appportfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -450,12 +451,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/AppsPortfolio/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.ithinkdiff.appportfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
