@@ -6,6 +6,6 @@ final class AppsPortfolioTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(AppsPortfolio().text, "Hello, World!")
+        XCTAssertEqual("Hello, World!", "Hello, World!")
     }
 }
