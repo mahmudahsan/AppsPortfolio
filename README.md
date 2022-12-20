@@ -3,12 +3,9 @@
     <a href="https://cocoapods.org/pods/AppsPortfolio">
         <img src="https://img.shields.io/cocoapods/p/AppsPortfolio.svg?style=flat" alt="CocoaPods" />
     </a>
-    <img src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="swift 4.0" />
+    <img src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="swift 5.0" />
     <a href="https://cocoapods.org/pods/AppsPortfolio">
         <img src="https://img.shields.io/badge/pods-v2.0.0-orange.svg" alt="CocoaPods" />
-    </a>
-    <a href="https://swift.org/package-manager">
-        <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
     </a>
     <a href="https://twitter.com/mahmudahsan">
         <img src="https://img.shields.io/badge/contact%40-mahmudahsan-green.svg" alt="Twitter: @mahmudahsan" />
@@ -90,18 +87,11 @@ sample_portfolio.plist file structure:
     <img src="plist_file.png" width="1624" max-width="50%" alt="plist flie stucture" />
 </p>
 
-## Usage in an iOS application
+## How to use
 
-Either
-
-- Drag the folders AppsPortfolio/Sources folder into your application's Xcode project. 
-
-or
-
-- Use CocoaPods or the Swift Package manager to include AppsPortfolio as a dependency in your project.
-
-```Ruby
-pod 'AppsPortfolio'
+Add this Swift package to your project
+```
+https://github.com/mahmudahsan/AppsPortfolio
 ```
 
 * In your project create a new **apps_portfolio.plist** file and provide your apps list. Follow the sample_portfolio.plist file format provided in AppsPortfolio/Data.
