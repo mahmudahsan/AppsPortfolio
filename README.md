@@ -1,11 +1,7 @@
 # AppsPortfolio
 <p align="center">
-    <a href="https://cocoapods.org/pods/AppsPortfolio">
-        <img src="https://img.shields.io/cocoapods/p/AppsPortfolio.svg?style=flat" alt="CocoaPods" />
-    </a>
-    <img src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="swift 5.0" />
-    <a href="https://cocoapods.org/pods/AppsPortfolio">
-        <img src="https://img.shields.io/badge/pods-v2.0.0-orange.svg" alt="CocoaPods" />
+    <a href="https://swift.org/package-manager">
+        <img src="https://img.shields.io/badge/spm-compatible-green.svg?style=flat" alt="Swift Package Manager" />
     </a>
     <a href="https://twitter.com/mahmudahsan">
         <img src="https://img.shields.io/badge/contact%40-mahmudahsan-green.svg" alt="Twitter: @mahmudahsan" />
