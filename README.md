@@ -1,5 +1,8 @@
 # AppsPortfolio
 <p align="center">
+    <a href="https://github.com/mahmudahsan/AppsPortfolio">
+        <img src="https://img.shields.io/badge/platform-iOS-lightgrey" alt="iOS" />
+    </a>
     <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/spm-compatible-green.svg?style=flat" alt="Swift Package Manager" />
     </a>
